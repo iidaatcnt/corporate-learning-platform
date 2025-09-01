@@ -1,0 +1,239 @@
+{
+  "categories": [
+    {
+      "id": "password-management",
+      "name": "パスワード管理",
+      "description": "強固なパスワードの作成と管理方法",
+      "icon": "🔐"
+    },
+    {
+      "id": "email-security",
+      "name": "メールセキュリティ",
+      "description": "安全なメール利用とフィッシング対策",
+      "icon": "📧"
+    },
+    {
+      "id": "data-protection",
+      "name": "情報漏洩対策",
+      "description": "機密情報の適切な取り扱い",
+      "icon": "🛡️"
+    },
+    {
+      "id": "malware-prevention",
+      "name": "マルウェア対策",
+      "description": "ウイルス・マルウェアからの防御",
+      "icon": "🦠"
+    },
+    {
+      "id": "social-engineering",
+      "name": "ソーシャルエンジニアリング",
+      "description": "人的脆弱性を狙った攻撃への対策",
+      "icon": "🎭"
+    },
+    {
+      "id": "remote-work",
+      "name": "リモートワークセキュリティ",
+      "description": "在宅勤務時のセキュリティ確保",
+      "icon": "🏠"
+    },
+    {
+      "id": "incident-response",
+      "name": "インシデント対応",
+      "description": "セキュリティ事故発生時の対処法",
+      "icon": "🚨"
+    },
+    {
+      "id": "compliance",
+      "name": "コンプライアンス",
+      "description": "法規制とセキュリティ基準",
+      "icon": "⚖️"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q001",
+      "categoryId": "password-management",
+      "difficulty": 1,
+      "points": 10,
+      "question": "安全なパスワードとして最も適切なものはどれですか？",
+      "options": [
+        {"id": "a", "text": "password123", "isCorrect": false},
+        {"id": "b", "text": "会社名2024", "isCorrect": false},
+        {"id": "c", "text": "Tr9$mK2@pL5x", "isCorrect": true},
+        {"id": "d", "text": "自分の誕生日", "isCorrect": false},
+        {"id": "e", "text": "12345678", "isCorrect": false}
+      ],
+      "explanation": "大文字・小文字・数字・記号を組み合わせた12文字以上のランダムな文字列が最も安全です。推測されやすい単語や個人情報は避けましょう。",
+      "referenceLinks": [
+        "https://www.ipa.go.jp/security/passwords/"
+      ]
+    },
+    {
+      "id": "q002",
+      "categoryId": "email-security",
+      "difficulty": 1,
+      "points": 10,
+      "question": "顧客10社に同じ内容のメールを送る際、他社のメールアドレスを見せたくない場合の正しい方法は？",
+      "options": [
+        {"id": "a", "text": "全員をTOに入れる", "isCorrect": false},
+        {"id": "b", "text": "全員をCCに入れる", "isCorrect": false},
+        {"id": "c", "text": "全員をBCCに入れる", "isCorrect": true},
+        {"id": "d", "text": "1社ずつ個別に送信する", "isCorrect": false},
+        {"id": "e", "text": "CCとBCCを混在させる", "isCorrect": false}
+      ],
+      "explanation": "BCC（Blind Carbon Copy）は他の受信者のアドレスが見えないため、プライバシー保護に適しています。顧客情報の漏洩を防ぐ重要な機能です。",
+      "referenceLinks": []
+    },
+    {
+      "id": "q003",
+      "categoryId": "email-security",
+      "difficulty": 2,
+      "points": 20,
+      "question": "フィッシングメールの特徴として正しくないものはどれですか？",
+      "options": [
+        {"id": "a", "text": "緊急の対応を求める内容", "isCorrect": false},
+        {"id": "b", "text": "正規の企業ロゴが使用されている", "isCorrect": false},
+        {"id": "c", "text": "リンク先URLが公式サイトと異なる", "isCorrect": false},
+        {"id": "d", "text": "デジタル署名が必ず付いている", "isCorrect": true},
+        {"id": "e", "text": "文章に不自然な日本語がある", "isCorrect": false}
+      ],
+      "explanation": "フィッシングメールにデジタル署名が付いていることはほとんどありません。むしろデジタル署名の有無は、正規のメールを見分ける手がかりになります。",
+      "referenceLinks": []
+    },
+    {
+      "id": "q004",
+      "categoryId": "data-protection",
+      "difficulty": 2,
+      "points": 20,
+      "question": "社外で拾ったUSBメモリを発見した場合の適切な対応は？",
+      "options": [
+        {"id": "a", "text": "中身を確認して持ち主を探す", "isCorrect": false},
+        {"id": "b", "text": "会社のPCで中身を確認する", "isCorrect": false},
+        {"id": "c", "text": "そのまま廃棄する", "isCorrect": false},
+        {"id": "d", "text": "情報システム部門に報告する", "isCorrect": true},
+        {"id": "e", "text": "警察に届ける", "isCorrect": false}
+      ],
+      "explanation": "不明なUSBメモリはマルウェアが仕込まれている可能性があります。絶対にPCに接続せず、専門部署に報告して適切な対処を依頼しましょう。",
+      "referenceLinks": []
+    },
+    {
+      "id": "q005",
+      "categoryId": "social-engineering",
+      "difficulty": 2,
+      "points": 20,
+      "question": "電話で「IT部門の者ですが、システムメンテナンスのためパスワードを教えてください」と言われた場合の対応は？",
+      "options": [
+        {"id": "a", "text": "すぐにパスワードを伝える", "isCorrect": false},
+        {"id": "b", "text": "上司に確認してから伝える", "isCorrect": false},
+        {"id": "c", "text": "折り返し電話すると伝えて切る", "isCorrect": true},
+        {"id": "d", "text": "パスワードのヒントだけ伝える", "isCorrect": false},
+        {"id": "e", "text": "別の同僚のパスワードを伝える", "isCorrect": false}
+      ],
+      "explanation": "正規のIT部門が電話でパスワードを聞くことはありません。必ず正規の手順で本人確認を行い、折り返し連絡することが重要です。",
+      "referenceLinks": []
+    },
+    {
+      "id": "q006",
+      "categoryId": "incident-response",
+      "difficulty": 3,
+      "points": 30,
+      "question": "ランサムウェア感染が疑われる場合、最初に行うべき対応は？",
+      "options": [
+        {"id": "a", "text": "ウイルス対策ソフトでスキャン", "isCorrect": false},
+        {"id": "b", "text": "ネットワークから切断", "isCorrect": true},
+        {"id": "c", "text": "データのバックアップ", "isCorrect": false},
+        {"id": "d", "text": "身代金の支払い検討", "isCorrect": false},
+        {"id": "e", "text": "PCの再起動", "isCorrect": false}
+      ],
+      "explanation": "感染拡大を防ぐため、即座にネットワークから切断することが最優先です。その後、専門部署への報告と証拠保全を行います。",
+      "referenceLinks": []
+    },
+    {
+      "id": "q007",
+      "categoryId": "remote-work",
+      "difficulty": 2,
+      "points": 20,
+      "question": "カフェでリモートワークする際、最もリスクが高い行動は？",
+      "options": [
+        {"id": "a", "text": "画面に覗き見防止フィルターを付ける", "isCorrect": false},
+        {"id": "b", "text": "Free Wi-Fiで機密情報にアクセス", "isCorrect": true},
+        {"id": "c", "text": "イヤホンでWeb会議に参加", "isCorrect": false},
+        {"id": "d", "text": "離席時にPCをロック", "isCorrect": false},
+        {"id": "e", "text": "VPN経由で社内システムにアクセス", "isCorrect": false}
+      ],
+      "explanation": "暗号化されていないFree Wi-Fiでの機密情報アクセスは、通信内容が盗聴される危険があります。必ずVPNを使用しましょう。",
+      "referenceLinks": []
+    },
+    {
+      "id": "q008",
+      "categoryId": "password-management",
+      "difficulty": 1,
+      "points": 10,
+      "question": "パスワードの管理方法として最も危険なものは？",
+      "options": [
+        {"id": "a", "text": "パスワード管理ツールを使用", "isCorrect": false},
+        {"id": "b", "text": "付箋にメモしてモニターに貼る", "isCorrect": true},
+        {"id": "c", "text": "暗号化されたファイルに保存", "isCorrect": false},
+        {"id": "d", "text": "生体認証と組み合わせる", "isCorrect": false},
+        {"id": "e", "text": "定期的に変更する", "isCorrect": false}
+      ],
+      "explanation": "パスワードを付箋に書いて見える場所に貼ることは、誰でも簡単に盗み見できるため最も危険です。",
+      "referenceLinks": []
+    },
+    {
+      "id": "q009",
+      "categoryId": "malware-prevention",
+      "difficulty": 2,
+      "points": 20,
+      "question": "ソフトウェアアップデートを行う主な理由は？",
+      "options": [
+        {"id": "a", "text": "新機能を追加するため", "isCorrect": false},
+        {"id": "b", "text": "セキュリティ脆弱性を修正するため", "isCorrect": true},
+        {"id": "c", "text": "動作を遅くするため", "isCorrect": false},
+        {"id": "d", "text": "古いファイルを削除するため", "isCorrect": false},
+        {"id": "e", "text": "容量を増やすため", "isCorrect": false}
+      ],
+      "explanation": "ソフトウェアアップデートの最重要目的は、発見されたセキュリティ脆弱性を修正し、攻撃から保護することです。",
+      "referenceLinks": []
+    },
+    {
+      "id": "q010",
+      "categoryId": "compliance",
+      "difficulty": 3,
+      "points": 30,
+      "question": "個人情報保護法における「個人情報」に該当しないものは？",
+      "options": [
+        {"id": "a", "text": "氏名と住所の組み合わせ", "isCorrect": false},
+        {"id": "b", "text": "メールアドレス", "isCorrect": false},
+        {"id": "c", "text": "社員番号と氏名の組み合わせ", "isCorrect": false},
+        {"id": "d", "text": "統計処理された匿名データ", "isCorrect": true},
+        {"id": "e", "text": "顔写真", "isCorrect": false}
+      ],
+      "explanation": "統計処理され個人を特定できない匿名データは、個人情報には該当しません。",
+      "referenceLinks": []
+    }
+  ],
+  "learningPaths": [
+    {
+      "id": "beginner",
+      "name": "セキュリティ基礎コース",
+      "description": "新入社員・初心者向けの基本的なセキュリティ知識",
+      "categories": ["password-management", "email-security", "data-protection"],
+      "estimatedDays": 30
+    },
+    {
+      "id": "intermediate",
+      "name": "セキュリティ実践コース",
+      "description": "一般社員向けの実践的なセキュリティスキル",
+      "categories": ["malware-prevention", "social-engineering", "remote-work"],
+      "estimatedDays": 45
+    },
+    {
+      "id": "advanced",
+      "name": "セキュリティ管理者コース",
+      "description": "管理職・セキュリティ担当者向けの高度な知識",
+      "categories": ["incident-response", "compliance"],
+      "estimatedDays": 60
+    }
+  ]
+}
